@@ -126,4 +126,4 @@ FitBuddy/
     │   └── app.js
     │
     └── images/
-        └── .gitkeep
+        └── .gitkeep    
