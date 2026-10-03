@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FitBuddy</title><link rel="stylesheet" href="/static/css/style.css"></head><body>
+<header><div class="wrap nav"><a class="brand" href="/">💚 FITBUDDY</a><nav><a href="/">Home</a><a href="#generator">Generate Plan</a><a href="/progress">Progress</a></nav></div></header>
+<main><section class="hero"><div class="wrap"><span class="tag">GEMINI-POWERED FITNESS</span><h1>Your AI-Powered Personal Fitness Companion</h1><p>Build smarter workout routines and personalized fitness plans with Google Gemini.</p><a class="btn" href="#generator">Create My Fitness Plan</a></div></section>
+<section id="generator" class="wrap section"><div class="title"><span class="tag">01 · PROFILE</span><h2>Tell FitBuddy about you</h2></div><form id="fitness-form" class="card"><div class="grid">
+<label>Name<input name="name" required placeholder="Alex"></label><label>Age<input name="age" type="number" required value="21"></label>
+<label>Gender<select name="gender"><option>Male</option><option>Female</option><option>Non-binary</option><option>Prefer not to say</option></select></label>
+<label>Height (cm)<input name="height" type="number" required value="175"></label><label>Weight (kg)<input name="weight" type="number" required value="70"></label>
+<label>Goal<select name="goal"><option>General Fitness</option><option>Muscle Building</option><option>Strength Improvement</option><option>Weight Management</option><option>Endurance</option><option>Flexibility</option></select></label>
+<label>Level<select name="level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label>
+<label>Workout Days<input name="workout_days" type="number" min="1" max="7" value="4"></label><label>Duration (minutes)<input name="duration" type="number" value="45"></label>
+<label>Equipment<select name="equipment"><option>No equipment</option><option>Dumbbells</option><option>Resistance bands</option><option>Home equipment</option><option>Gym equipment</option></select></label>
+<label>Dietary Preference<select name="dietary_preference"><option>Vegetarian</option><option>Non-vegetarian</option><option>Vegan</option><option>Eggetarian</option><option>General / No preference</option></select></label>
+<label class="wide">Limitations / Notes<textarea name="limitations" rows="3" placeholder="None"></textarea></label></div>
+<div class="notice">FitBuddy provides general educational fitness information and is not a substitute for professional medical advice.</div>
+<button class="btn" id="generate">Generate AI Fitness Plan</button><div id="message" class="message"></div></form></section>
+<section id="results" class="wrap section hidden"><div class="title"><span class="tag">02 · AI PLAN</span><h2>Your weekly plan</h2></div><div id="summary" class="stats"></div><div id="days" class="days"></div><div class="two"><article class="card"><h3>Recovery</h3><ul id="recovery"></ul></article><article class="card"><h3>Safety Note</h3><p id="safety"></p></article></div><div class="title meal-title"><span class="tag">03 · NUTRITION</span><h2>General meal suggestions</h2></div><button class="btn secondary" id="meals-btn">Generate Meal Suggestions</button><div id="meal-message" class="message"></div><div id="meals" class="days"></div></section></main>
+<footer>FitBuddy · Naan Mudhalvan / Google Cloud Generative AI Student Project</footer><script src="/static/js/app.js"></script></body></html>
